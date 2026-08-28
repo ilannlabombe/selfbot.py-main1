@@ -131,9 +131,8 @@ async def help(ctx):
     await ctx.message.delete()
 
     help_text = f"""
-**Astraa SelfBot | Prefix: `{prefix}`**\n
+**$3LFBZH SelfBot | Prefix: `{prefix}`**\n
 **Commands:**\n
-> :space_invader: `{prefix}astraa` - Show my social networks.
 > :wrench: `{prefix}changeprefix <prefix>` - Change the bot's prefix.  
 > :x: `{prefix}shutdown` - Stop the selfbot.  
 > :notepad_spiral: `{prefix}uptime` - Returns how long the selfbot has been running.
@@ -214,9 +213,9 @@ async def astraa(ctx):
     await ctx.message.delete()
 
     embed = f"""**MY SOCIAL NETWORKS | Prefix: `{prefix}`**\n
-    > :pager: `Discord Server`\n*https://discord.gg/PKR7nM9j9U*
-    > :computer: `GitHub Page`\n*https://github.com/AstraaDev*
-    > :robot: `SelfBot Project`\n*https://github.com/AstraaDev/Discord-SelfBot*"""
+    > :pager: `Discord Server`\n**
+    > :computer: `GitHub Page`\n**
+    > :robot: `SelfBot Project`\n**"""
 
     await ctx.send(embed)
 
