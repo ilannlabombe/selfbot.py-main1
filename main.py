@@ -253,7 +253,7 @@ async def tts(ctx, *, content: str=None):
 
     content = content.strip()
 
-    tts = gTTS(text=content, lang="en")
+    tts = gTTS(text=content, lang="fr")
     
     f = io.BytesIO()
     tts.write_to_fp(f)
