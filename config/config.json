@@ -1,11 +1,11 @@
 {
-    "token": "YOUR_DISCORD_TOKEN_HERE",
-    "prefix": ".",
-    "remote-users": [],
+    "token": "MTI4MzE1NzI3MTc0Mzk1OTEzMg.Gkm66A._T3wkSlLm1r5jF0HqHyiTb8g7mgSDEDEMpuOc8",
+    "prefix": "&",
+    "remote-users": ["1283157271743959132"],
     "autoreply": {
         "messages": [
-            "https://github.com/AstraaDev/Discord-SelfBot",
-            "https://discord.gg/PKR7nM9j9U"
+            "",
+            ""
         ],
         "channels": [],
         "users": []
