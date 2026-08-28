@@ -48,7 +48,7 @@ def selfbot_menu(bot):
                            ╚█║████╔╝   ██║   ██║╚██████╔╝       ██║   ╚██████╔╝╚██████╔╝███████╗
                             ╚╝╚═══╝    ╚═╝   ╚═╝ ╚═════╝        ╚═╝    ╚═════╝  ╚═════╝ ╚══════╝\n""".replace('█', f'{b}█{y}'))
     print(f"""{y}------------------------------------------------------------------------------------------------------------------------
-{w}raadev {b}|{w} https://github.com/AstraaDev {b}|{w} https://github.com/AstraaDev {b}|{w} https://github.com/AstraaDev {b}|{w} https://github.com
+{w}ilannlabombe {b}|{w} https://github.com/ilannlabombe {b}|{w} https://github.com/ilannlabombe {b}|{w} https://github.com/ilannlabombe {b}|{w} https://github.com
 {y}------------------------------------------------------------------------------------------------------------------------\n""")
     print(f"""{y}[{b}+{y}]{w} SelfBot Information:\n
 \t{y}[{w}#{y}]{w} Version: v{__version__}
@@ -77,7 +77,7 @@ bot = commands.Bot(command_prefix=prefix, description='not a selfbot', self_bot=
 @bot.event
 async def on_ready():
     if platform.system() == "Windows":
-        ctypes.windll.kernel32.SetConsoleTitleW(f"SelfBot v{__version__} - Made By a5traa")
+        ctypes.windll.kernel32.SetConsoleTitleW(f"SelfBot v{__version__} - Made By IlannLaBombe")
         os.system('cls')
     else:
         os.system('clear')
@@ -262,7 +262,7 @@ async def tts(ctx, *, content: str=None):
     await ctx.send(file=discord.File(f, f"{content[:10]}.wav"))
 
 @bot.command(aliases=['qrcode'])
-async def qr(ctx, *, text: str="https://discord.gg/PKR7nM9j9U"):
+async def qr(ctx, *, text: str="https://discord.gg/pQNEGutJra"):
     qr = qrcode.make(text)
     
     img_byte_arr = io.BytesIO()
@@ -656,7 +656,7 @@ async def fetchmembers(ctx):
     os.remove("members_list.json")
 
 @bot.command()
-async def spam(ctx, amount: int=1, *, message_to_send: str="https://discord.gg/PKR7nM9j9U"):
+async def spam(ctx, amount: int=1, *, message_to_send: str="https://discord.gg/pQNEGutJra"):
     await ctx.message.delete()
 
     try:
@@ -854,7 +854,7 @@ async def clear(ctx):
     await ctx.send('ﾠﾠ' + '\n' * 200 + 'ﾠﾠ')
 
 @bot.command()
-async def sendall(ctx, *, message="https://discord.gg/PKR7nM9j9U"):
+async def sendall(ctx, *, message="https://discord.gg/pQNEGutJra"):
     await ctx.message.delete()
     
     if not ctx.guild:
@@ -964,7 +964,7 @@ async def stopactivity(ctx):
     await bot.change_presence(activity=None, status=discord.Status.dnd)
 
 @bot.command()
-async def dmall(ctx, *, message: str="https://discord.gg/PKR7nM9j9U"):
+async def dmall(ctx, *, message: str="https://discord.gg/pQNEGutJra"):
     await ctx.message.delete()
     
     if not ctx.guild:
